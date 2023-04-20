@@ -12,11 +12,11 @@ export class QueriesService {
   retriveAllrecommendedQueries(skills: Array<String>){
     console.log("in service")
     console.log(skills)
-    return this.http.post<Query[]>("https://querybox.herokuapp.com/query/recommended",{"skills":skills})
+    return this.http.post<Query[]>("https://ers-api.onrender.com/query/recommended",{"skills":skills})
   }
   
   get_all_queries(){
-    return this.http.get<Query[]>("https://querybox.herokuapp.com/query/latest");
+    return this.http.get<Query[]>("https://ers-api.onrender.com/query/latest");
   }
 
 
