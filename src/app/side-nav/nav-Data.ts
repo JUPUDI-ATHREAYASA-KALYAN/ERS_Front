@@ -5,11 +5,6 @@ export const navbarData = [
         label : 'Home'
     },
     {
-        routeLink : 'qspace',
-        icon : 'fa fa-object-group',
-        label : 'Qspace'
-    },
-    {
         routeLink : 'profile',
         icon : 'fa fa-user-circle',
         label : 'Profile'
@@ -18,11 +13,6 @@ export const navbarData = [
         routeLink : 'recommended',
         icon : 'fa fa-filter',
         label : 'Recommended'
-    },
-    {
-        routeLink : 'find-expert',
-        icon : 'fa fa-users',
-        label : 'Find Experts'
     },
     {
         routeLink : 'following',
