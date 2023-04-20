@@ -13,12 +13,12 @@ export class UsersServiceService {
   get_recommended_experts(tags : Array<string>){
     console.log("In User service")
     console.log(tags)
-    // return this.http.post<Rec_user[]>("https://querybox.herokuapp.com/user/find_experts",{"tags":tags});
-    return this.http.post<Rec_user[]>("http://127.0.0.1:8000/user/find_experts",{"tags":tags});
+    
+    return this.http.post<Rec_user[]>("https://ers-api.onrender.com/user/find_experts",{"tags":tags});
   }
 
   get_all_users(){
     console.log("in user service");
-    return this.http.get<User[]>("https://querybox.herokuapp.com/user/all");
+    return this.http.get<User[]>("https://ers-api.onrender.com/user/all");
   }
 }
